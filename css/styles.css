@@ -12,10 +12,35 @@ body {
 /* seconadary background color #F4F4FD */
 /* main color #2E2F42 */
 /* text color #434455 */
-
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p, 
+ul {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  max-width: 1158px; 
+  padding: 0 15px; 
+  margin:  0 auto; 
+}
                                                    /* HEADER */
 .header {
+  display: inline-block;
   background-color: #ffffff;
+  display: flex;
 }
 
 .web {
@@ -28,8 +53,9 @@ body {
   font-size: 18px;
   line-height: 1.33;
   /* identical to box height, or 133% */
+  display: inline-block;
+  width: 115px;
 
-  display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -46,6 +72,9 @@ body {
 
   letter-spacing: 0.02em;
   text-decoration: none;
+ 
+  text-align: center;
+
 }
 
 .contacts {
@@ -64,8 +93,16 @@ body {
                                                 /*MAIN */
 .hero {
   background-color: var(--primary-text-color);
+  margin-bottom: 120px;
+  height: 600px;
+ 
 }
-
+.hero-but {
+  padding: 16px 32px 16px 32px;
+  margin-top: 48px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .title {
   color: #ffffff;
   font-family: "Roboto";
@@ -76,8 +113,18 @@ body {
 
   text-align: center;
   letter-spacing: 0.02em;
+  
+  max-width: 500px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 188px;
 }
 
+
+.not-use {
+  visibility: hidden;
+}
 .button {
   color: #ffffff;
   background-color: #4d5ae5;
@@ -85,13 +132,20 @@ body {
   font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
+
 /* identical to box height, or 150% */
 
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
+border-radius: 4px;
+border-style: none;
 }
 
+.section {
+  margin-bottom: 120px;
+  
+}
 
 .title-section {
   color: var(--primary-text-color);
@@ -105,6 +159,9 @@ letter-spacing: 0.04em;
 
 .sec-ul {
   list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
 }
 
 
@@ -115,6 +172,7 @@ letter-spacing: 0.04em;
   line-height: 1.5;
   /* or 150% */
   letter-spacing: 0.02em;
+  
 }
   
 .photos-title {
@@ -127,6 +185,10 @@ line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 72px;
+}
+.photos {
+  margin-bottom: 120px;
 }
 
 .team {
@@ -142,6 +204,8 @@ text-transform: capitalize;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .team-mem {
   color: var(--primary-text-color);
@@ -151,6 +215,10 @@ text-transform: capitalize;
 
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.team-block {
+  padding-bottom: 100px;
 }
 .team-text {
   color: var(--title-text-color);
@@ -165,6 +233,7 @@ text-transform: capitalize;
 /* Footer */
 .footer {
   background-color: var(--primary-text-color);
+  max-height: 310px;
 }
 .std-foot {
   color: #f4f4fd;
@@ -174,12 +243,16 @@ text-transform: capitalize;
   font-size: 18px;
   line-height: 1.33;
 
-  display: flex;
+  display: inline-block;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0px;
+  
 }
+
+
 .text-foot {
   color: #e7e9fc;
   font-weight: 400;
@@ -190,6 +263,17 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 
 }
+
+
+
+.port-img {
+  flex-wrap: wrap;
+
+  margin-bottom: 120px;
+}
+
+
+
 
 /*PORTFOLIO  */
 
@@ -202,10 +286,21 @@ font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 
-
 letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+border-radius: 4px;
+border-style: none;
 }
 
+.port-btns {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
 
 .button:focus, 
 .button:hover,
