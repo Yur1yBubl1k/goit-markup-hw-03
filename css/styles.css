@@ -323,9 +323,9 @@ html {
   margin-bottom: 120px;
 }
 
-/* .port-li-img {
+.port-li-img {
 border: 1px solid #E7E9FC;
-} */
+}
 
 .port-button {
   color: var(--button-color);
@@ -386,10 +386,10 @@ border: 1px solid #E7E9FC;
   text-decoration: none;
   color: var(--primary-text-color);
 }
-.port-link-block {
-  /* display: block; */
+/* .port-link-block {
+ 
   border: 1px solid #E7E9FC;
-}
+} */
 
 .port-text {
   font-weight: 400;
