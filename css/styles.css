@@ -319,10 +319,13 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  
   margin-bottom: 120px;
 }
 
-
+/* .port-li-img {
+  border: 1px solid #E7E9FC;
+} */
 
 .port-button {
   color: var(--button-color);
