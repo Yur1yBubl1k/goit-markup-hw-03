@@ -28,7 +28,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 .container {
   max-width: 1158px;
@@ -38,6 +38,7 @@ html {
 /* HEADER */
 .header {
   background-color: #ffffff;
+  border-bottom: 1px solid #E7E9FC;
 }
 
 .nav-gen {
@@ -61,6 +62,7 @@ html {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
 }
 
 .nav-block,
@@ -185,6 +187,9 @@ html {
 .list-sec:not(:last-child) {
   margin-right: 24px;
 }
+.list-sec {
+  max-width: 264px;
+}
 
 .sec-ul {
   list-style: none;
@@ -245,7 +250,7 @@ html {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding-top: 32px;
+ 
 }
 
 .team-block {
@@ -263,9 +268,10 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* .team-text-block {
-  background-color: #ffffff;
-} */
+.team-text-block {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .team-text {
   color: var(--title-text-color);
@@ -275,7 +281,7 @@ html {
 
   text-align: center;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
+  
 }
 
 /* Footer */
@@ -284,8 +290,12 @@ html {
   /* max-height: 310px; */
   padding: 100px 0;
 }
-/* .foot-block {
-  /* padding-top: 100px;} */
+
+
+.foot-block {
+  width: 264px;}
+
+
 .std-foot {
   color: #f4f4fd;
   font-family: "Raleway";
@@ -309,8 +319,8 @@ html {
   line-height: 1.5;
   /* or 150% */
   letter-spacing: 0.02em;
-  padding-top: 16px;
-  width: 264px;
+  margin-top: 16px;
+  
 }
 
 /*PORTFOLIO  */
