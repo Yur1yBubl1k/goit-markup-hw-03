@@ -151,7 +151,7 @@ html {
   padding-top: 188px;
 }
 
-.not-use {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -323,13 +323,15 @@ html {
   margin-bottom: 120px;
 }
 
-.port-li-img {
-border: 1px solid #E7E9FC;
+.img-port {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .port-button {
   color: var(--button-color);
-  background-color: #e7e9fc;
+  background-color: #F4F4FD;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -340,8 +342,9 @@ border: 1px solid #E7E9FC;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
+  
+  border: 1px solid #E7E9FC;
   border-radius: 4px;
-  border-style: none;
   padding: 12px 24px;
 }
 
@@ -386,10 +389,12 @@ border: 1px solid #E7E9FC;
   text-decoration: none;
   color: var(--primary-text-color);
 }
-/* .port-link-block {
- 
-  border: 1px solid #E7E9FC;
-} */
+.port-link-block {
+  /* display: block; */
+  border-right: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+}
 
 .port-text {
   font-weight: 400;
